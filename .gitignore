@@ -147,6 +147,8 @@ activemq-data/
 # SageMath parsed files
 *.sage.py
 
+
+catboost_info/
 # Environments
 artifacts
 .env
