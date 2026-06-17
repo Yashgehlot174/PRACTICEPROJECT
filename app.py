@@ -1,19 +1,18 @@
-from flask import Flask,request,render_template
+from flask import Flask, request, render_template, redirect, url_for
 import numpy as np
 import pandas as pd
 
 from sklearn.preprocessing import StandardScaler
-from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-application=Flask(__name__)
-
-app=application
+application = Flask(__name__)
+app = application
 
 ## Route for a home page
 
 @app.route('/')
 def index():
-    return render_template('index.html') 
+    return redirect(url_for('predict_datapoint'))
 
 @app.route('/predictdata',methods=['GET','POST'])
 def predict_datapoint():
