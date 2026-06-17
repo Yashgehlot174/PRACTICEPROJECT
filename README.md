@@ -63,6 +63,14 @@ This repository contains a Flask web application for predicting student exam per
 
 3. Use the home page buttons to navigate to the prediction page.
 
+## Live Deployment
+
+The project is deployed on Render and available at:
+
+```text
+https://practiceproject-8eeg.onrender.com/
+```
+
 ## Prediction Input Fields
 
 The web form accepts the following fields:
